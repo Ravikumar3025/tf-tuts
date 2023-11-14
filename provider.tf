@@ -6,10 +6,16 @@ terraform {
    }
  }
 
+
  backend "s3" {
    bucket = "tf-tuts-state"
    key    = "state"
    region = "eu-central-1"
  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+  profile= "terraform"
 }
 
