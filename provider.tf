@@ -6,11 +6,5 @@ terraform {
    }
  }
 
-
- backend "s3" {
-   bucket = "rk-rs-state-bkt"
-   key    = "state"
-   region = "us-east-1"
- }
 }
 
